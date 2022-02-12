@@ -10,7 +10,7 @@ import com.example.demo.model.User;
 @Controller
 public class HomeController {
 	@GetMapping("/form")
-	private String readForm(@ModelAttribute User user) {
+	private String readForm(@ModelAttribute User User) {
 		return "form";
 	}
 
