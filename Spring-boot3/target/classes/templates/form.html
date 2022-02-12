@@ -5,12 +5,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form th:action="@{/form}" th:object= "${User}" method="post">
+	<form th:action="@{/form}" th:object= "${user}" method="post">
 		<label for="name">氏名:</label>
 		<input type="text" th:field="*{name}"><br>
 		
 		<label for="email">メール:</label>
-		<input type="email" th:field="*{email}]"><br>
+		<input type="email" th:field="*{email}"><br>
 		
 		<label for="age">年齢</label>
 		<input type="number" th:field="*{age}"><br>
